@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  cpsdk:
+    image: "phate999/cpsdk_container:latest"
+    container_name: "cpsdk"
+    volumes:
+      - ${CONFIG_STORE}
+    logging:
+        driver: json-file
